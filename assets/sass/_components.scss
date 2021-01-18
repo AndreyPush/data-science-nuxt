@@ -1,0 +1,27 @@
+//layout
+@import 'components/layout/sidebar';
+@import 'components/layout/header';
+@import 'components/layout/aside';
+@import 'components/layout/content';
+@import 'components/layout/footer';
+
+
+//detached
+@import 'components/reuse/video_player';
+@import 'components/lesson/transcriptions';
+
+//lms
+
+//--courses
+
+// ----aside components
+@import 'components/lesson/aside/practice';
+@import 'components/lesson/aside/resources';
+@import 'components/lesson/aside/articles';
+@import 'components/lesson/aside/speakers';
+@import 'components/lesson/aside/studying';
+
+//----lesson
+@import 'components/lesson/lesson_video';
+@import 'components/lesson/lesson_node';
+@import 'components/lesson/lesson_masterclass';

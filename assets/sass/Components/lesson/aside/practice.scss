@@ -1,0 +1,143 @@
+.asidePractice {
+
+  &_container {
+    border-top: 1px solid $semidarkGray;
+    padding: 20px;
+  }
+  &_title {
+    display: block;
+    color: $darkBlue;
+    font: 14px/17px tm;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+
+    &Block {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &_togglerIcon {
+    margin-left: auto;
+    width: 11px;
+    height: 6px;
+    flex-shrink: 0;
+    transform: rotate(180deg) translateY(5px);
+    transition: $trs;
+
+    &--opened {
+      transform: translateY(-5px) rotate(0);
+    }
+    path {
+      fill: transparent;
+      stroke: $darkBlue
+    }
+  }
+  &_description {
+    margin-top: 10px;
+    display: block;
+    color: $darkGray;
+    font: 14px/17px tr;
+  }
+  &_meta {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+    &_time {
+      width: 80px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      border: 1px solid #ECECEC;
+
+      &_icon {
+        width: 16px;
+        height: 16px;
+        display: block;
+        flex-shrink: 0;
+
+        path {
+          fill: $darkGray
+        }
+      }
+      &_value {
+        display: block;
+        margin-left: 5px;
+        color: $darkGray;
+        font: 14px/17px tr;
+      }
+    }
+    &_points {
+      margin-left: 10px;
+      width: 80px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      border: 1px solid #ECECEC;
+
+      &_content {
+        display: block;
+        color: $darkGray;
+        font: 14px/17px tr;
+      }
+      &_icon {
+        display: block;
+        margin-left: 5px;
+        width: 18px;
+        height: 18px;
+
+        path {
+          fill: $darkGray
+        }
+      }
+    }
+  }
+  &_go {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background-color: $pink;
+    border-radius: 6px;
+    height: 56px;
+    width: calc(100% - 40px);
+    margin: 20px auto 0;
+    color: $white;
+    font: 14px/1.27 tm;
+    cursor: pointer;
+    transition: $trs;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+  &_knowMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background-color: $semidarkGray;
+    border-radius: 6px;
+    height: 56px;
+    width: calc(100% - 40px);
+    margin: 10px auto 0;
+    color: $darkGray;
+    font: 14px/1.27 tm;
+    cursor: pointer;
+    transition: $trs;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $darkGray;
+      color: $white;
+    }
+  }
+}

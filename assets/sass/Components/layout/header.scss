@@ -1,0 +1,111 @@
+.header{
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px solid $gray;
+  background-color: transparent;
+  transition: $trs;
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &_leftSide {
+    margin: 0 auto 0 0;
+    display: flex;
+    align-items: center;
+  }
+  &_rightSide {
+    margin: 0 0 0 auto;
+  }
+  &_balance {
+    display: flex;
+    align-items: center;
+
+    &_icon {
+      display: block;
+      width: 19px;
+      height: 17px;
+      path {
+        fill: #FC4C4C
+      }
+
+      &Block {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 10px rgba(96, 82, 135, 0.15);
+        background-color: $white;
+        border-radius: 50%;
+      }
+    }
+
+    &_title {
+      display: block;
+      margin-left: 26px;
+      color: #9ca9ba;
+      font: 14px/17px tr;
+    }
+
+    &_val {
+      display: block;
+      margin-left: 10px;
+      color: $darkBlue;
+      font: 14px/17px tb;
+    }
+  }
+  &_points {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    &_title {
+      display: block;
+      color: #9ca9ba;
+      font: 14px/17px tr;
+    }
+
+    &_val {
+      display: block;
+      margin-left: 10px;
+      color: $red;
+      font: 14px/17px tb;
+    }
+
+    &_icon {
+      display: block;
+      margin-left: 3px;
+      width: 20px;
+      height: 20px;
+
+      path {
+        fill: $red
+      }
+    }
+  }
+  &_toProfile {
+    display: flex;
+    align-items: center;
+
+    &_icon {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      .fa-primary {
+        fill: $darkGray
+      }
+      .fa-secondary {
+        fill: $gray
+      }
+    }
+
+    &_userName {
+      display: block;
+      margin-left: 20px;
+      color: $darkBlue;
+      font: 14px/17px tb;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.asideSpeakers {
+  margin: 12px 10px 10px;
+  padding: 0 10px;
+  transition: 0.3s linear;
+
+  &--opened {
+    transition: 0.5s linear;
+  }
+  &_item {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: $cream;
+    padding: 20px 10px;
+    margin-top: 5px;
+
+    &--isYou {
+      border: 1px solid $darkGray;
+    }
+    &_photo {
+      display: block;
+      max-width: 52px;
+      max-height: 52px;
+      width: 100%;
+      height: auto;
+      border-radius: 29px;
+
+      &Block {
+        flex-shrink: 0;
+        width: 52px;
+      }
+    }
+    &_content {
+      margin-left: 8px;
+    }
+    &_title {
+      display: block;
+      color: $darkBlue;
+      font: 14px/17px tr;
+    }
+    &_meta {
+      margin-top: 3px;
+      display: flex;
+      align-items: center;
+    }
+    &_role {
+      display: block;
+      color: $darkGray;
+      font: 14px/17px tr;
+    }
+    &_points {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+
+      &_val {
+        display: block;
+        color: $red;
+        font: 14px/17px tb;
+      }
+      &_icon {
+        display: block;
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+
+        path {
+          fill: $red
+        }
+      }
+    }
+  }
+  &_overalRating {
+    margin: 10px auto 0;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    background-color: $gray;
+    border-radius: 6px;
+    color: $darkGray;
+    text-transform: uppercase;
+    font: 14px/17px tm;
+  }
+}

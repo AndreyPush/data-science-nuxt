@@ -1,0 +1,32 @@
+.asideStudying {
+  padding: 8px 20px 0;
+  @include cl;
+
+  &_item {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+
+    &_title {
+      display: block;
+      color: $darkGray;
+      font: 14px/17px tr;
+    }
+    &_meta {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+    &_icon {
+      display: block;
+      max-width: 13px;
+      max-height: 14px;
+      flex-shrink: 0;
+    }
+    &_points {
+      margin-left: 6px;
+      color: $darkGray;
+      font: 14px/17px tr;
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "transcription": [
+    {
+      "start": 0,
+      "end": 50,
+      "title": "Приветствие"
+    },
+    {
+      "start": 50,
+      "end": 115,
+      "title": "Примитивы"
+    },
+    {
+      "start": 115,
+      "end": 190,
+      "title": "Символьные постоянные"
+    },
+    {
+      "start": 190,
+      "end": 240,
+      "title": "Boxed. Равенство по ссылке/значению"
+    },
+    {
+      "start": 240,
+      "end": 315,
+      "title": "Явные преобразования"
+    },
+    {
+      "start": 315,
+      "end": 405,
+      "title": "Unit, Nothing"
+    },
+    {
+      "start": 405,
+      "end": 740,
+      "title": "Getters, Setters"
+    },
+    {
+      "start": 740,
+      "end": 900,
+      "title": "Анатомия Class"
+    },
+    {
+      "start": 900,
+      "end": 1080,
+      "title": "Конструктор"
+    },
+    {
+      "start": 1080,
+      "end": 1390,
+      "title": "Null Safety"
+    },
+    {
+      "start": 1390,
+      "end": 1670,
+      "title": "Интерполяция строк"
+    },
+    {
+      "start": 1670,
+      "end": 1940,
+      "title": "Конструкция When"
+    },
+    {
+      "start": 1940,
+      "end": 2235,
+      "title": "Extensions functions"
+    },
+    {
+      "start": 2235,
+      "end": 2400,
+      "title": "with"
+    },
+    {
+      "start": 2400,
+      "end": 2490,
+      "title": "apply"
+    },
+    {
+      "start": 2490,
+      "end": 2620,
+      "title": "let"
+    },
+    {
+      "start": 2620,
+      "end": 2895,
+      "title": "run"
+    },
+    {
+      "start": 2895,
+      "end": 3050,
+      "title": "also"
+    },
+    {
+      "start": 3050,
+      "end": 3255,
+      "title": "Шпаргалка по scoped функциям"
+    },
+    {
+      "start": 3255,
+      "end": 3530,
+      "title": "Комбинирование функций"
+    },
+    {
+      "start": 3530,
+      "end": 3605,
+      "title": "Практика"
+    },
+    {
+      "start": 3605,
+      "end": 3705,
+      "title": "class User. Основной конструктор"
+    },
+    {
+      "start": 3705,
+      "end": 3730,
+      "title": "Реализация fullName"
+    },
+    {
+      "start": 3730,
+      "end": 3755,
+      "title": "Реализация initials"
+    },
+    {
+      "start": 3755,
+      "end": 3800,
+      "title": "Реализация phone"
+    },
+    {
+      "start": 3800,
+      "end": 3870,
+      "title": "Реализация login"
+    },
+    {
+      "start": 3870,
+      "end": 4015,
+      "title": "Реализация passwordHash и вторичные конструкторы"
+    },
+    {
+      "start": 4015,
+      "end": 4035,
+      "title": "Реализация encrypt"
+    },
+    {
+      "start": 4035,
+      "end": 4170,
+      "title": "extension md5"
+    },
+    {
+      "start": 4170,
+      "end": 4275,
+      "title": "Реализация salt"
+    },
+    {
+      "start": 4275,
+      "end": 4405,
+      "title": "Реализация generateAccessCode"
+    },
+    {
+      "start": 4405,
+      "end": 4560,
+      "title": "Реализация sendAccessCodeToUser"
+    },
+    {
+      "start": 4560,
+      "end": 4665,
+      "title": "Блок инициализации"
+    },
+    {
+      "start": 4665,
+      "end": 4680,
+      "title": "Реализация checkPassword"
+    },
+    {
+      "start": 4680,
+      "end": 4730,
+      "title": "Реализация changePassword"
+    },
+    {
+      "start": 4730,
+      "end": 5060,
+      "title": "Реализация Factory"
+    },
+    {
+      "start": 5060,
+      "end": 5130,
+      "title": "Реализация UserHolder. registerUser"
+    },
+    {
+      "start": 5130,
+      "end": 5175,
+      "title": "Реализация loginUser"
+    },
+    {
+      "start": 5175,
+      "end": 5200,
+      "title": "Запуск теста"
+    },
+    {
+      "start": 5200,
+      "end": 5274,
+      "title": "Исправление реализации"
+    }
+  ]
+}

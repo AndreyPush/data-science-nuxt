@@ -1,0 +1,115 @@
+.lessonVideo{
+  &_progress {
+    &_ahead {
+      display: flex;
+      align-items: center;
+    }
+
+    &_data {
+      flex-shrink: 0;
+      margin-right: auto;
+    }
+
+    &_value {
+      display: block;
+      color: $darkGray;
+      font: 24px/29px tb;
+    }
+
+    &_behaviors {
+      flex-shrink: 0;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    &_behavior {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 9px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: $semidarkGray;
+      margin-left: 10px;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        .lessonVideo_progress_behavior {
+          &_icon {
+            path {
+              fill: $darkBlue;
+            }
+          }
+
+          &_content {
+            color: $darkBlue;
+          }
+        }
+      }
+
+      &_icon {
+        display: block;
+        width: 12px;
+        height: 7px;
+        flex-shrink: 0;
+
+        path {
+          fill: $darkGray;
+          transition: $trs;
+        }
+      }
+
+      &_content {
+        display: block;
+        margin: 0 8px;
+        color: $darkGray;
+        text-transform: uppercase;
+        font: 12px/14px tm;
+        transition: $trs;
+      }
+    }
+
+    &_bar {
+      margin-top: 20px;
+      height: 6px;
+      border-radius: 3px;
+      width: 100%;
+      background-color: #e0e4ea;
+
+      &_trace {
+        display: block;
+        height: 100%;
+        border-radius: 3px;
+        background-color: $pink;
+        box-shadow: 0px 3px 10px rgba(144, 50, 238, 0.3), 0px 4px 20px rgba(255, 0, 0, 0.3);
+      }
+    }
+  }
+  &_body {
+    margin-top: 30px;
+  }
+
+  &_status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 6px;
+    background-color: $green;
+    color: $white;
+    text-transform: uppercase;
+    font: 14px/1.27 tm;
+    width: fit-content;
+  }
+
+  &_description {
+    display: block;
+    color: $darkGray;
+    margin-top: 20px;
+    font: 14px/1.43 tr
+  }
+}

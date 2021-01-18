@@ -1,0 +1,128 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  width: 90px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  z-index: 5;
+  transition: $trs;
+  &_logo {
+    display: block;
+    width: 32px;
+    height: 35px;
+
+    &_icon {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+
+      path {
+        fill: $red
+      }
+    }
+    &Block {
+      height: 81px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid $gray;
+    }
+  }
+  &_menu {
+    margin-top: 30px;
+
+    &_list {
+      display: block;
+    }
+
+    &_item {
+      display: block;
+    }
+
+    &_lnk {
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 2px solid transparent;
+      transition: $trs;
+      background-color: transparent;
+
+      &.nuxt-link-active {
+        border-left: 2px solid $red;
+
+        .sidebar_menu_icon {
+          &_partLight {
+            stroke: $pink;
+          }
+
+          &_partDark {
+            stroke: $red;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: $semidarkGray;
+      }
+    }
+
+    &_icon {
+      display: block;
+
+      &_partLight {
+        stroke: #ced5e1;
+        transition: $trs;
+      }
+
+      &_partDark {
+        stroke: $darkGray;
+        transition: $trs;
+      }
+    }
+  }
+  &_logout {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: $trs;
+
+    &:hover {
+      background-color: $semidarkGray;
+    }
+  }
+  &_themeToggler {
+    margin: auto auto 0;
+    cursor: pointer;
+    user-select: none;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    transition: $trs;
+
+    &_icon {
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
+      background-color: $red;
+      box-shadow: 0 0 3px rgba(#000, 0.4);
+      transition: $trs;
+
+      &--dark {
+        transform: translateX(20px);
+      }
+    }
+  }
+}

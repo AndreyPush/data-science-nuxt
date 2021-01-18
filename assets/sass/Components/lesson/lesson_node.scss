@@ -1,0 +1,39 @@
+.lesson_node {
+  margin-top: 33px;
+  @include cl;
+  p, li {
+    display: block;
+    color: $darkGray;
+    font: 14px/1.43 tr
+  }
+  b {
+    font: 14px/1.43 tb;
+  }
+  u {
+    text-decoration: underline;
+  }
+  i {
+    display: inline-block;
+    font-style: italic;
+  }
+  p {
+    &:not(:first-of-type) {
+      margin-top: 14px;
+    }
+  }
+  ul {
+    display: block;
+    margin-top: 5px;
+    @include cl;
+    li {
+      margin-top: 12px;
+      &:before {
+        content: '●';
+        color: $pink;
+        font: inherit;
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+  }
+}

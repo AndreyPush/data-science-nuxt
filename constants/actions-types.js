@@ -1,0 +1,1 @@
+export const USER_LOGOUT_ACTION = 'user/USER_LOGOUT_ACTION';

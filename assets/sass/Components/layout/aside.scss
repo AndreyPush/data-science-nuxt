@@ -1,0 +1,92 @@
+.aside{
+  margin: 0 0 30px 36px;
+  flex: 1 1 273px;
+  max-width: 273px;
+  transition: 0.3s linear;
+
+  &Block {
+    background: $white;
+    box-shadow: 0px 6px 20px rgba(140, 147, 162, 0.1);
+    border-radius: 10px;
+    padding: 17px 0 20px;
+    position: relative;
+
+    &--have-expand {
+      padding-bottom: 70px;
+    }
+    &:not(:first-of-type) {
+      margin-top: 30px;
+    }
+    &_title {
+      display: block;
+      color: $darkBlue;
+      font: 14px/1.43 tb;
+
+      &Block {
+        display: flex;
+        align-items: center;
+        padding: 0 20px 13px 20px;
+        border-bottom: 1px solid $semidarkGray;
+      }
+      &_tooltip {
+        margin-left: auto;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        display: block;
+
+        &_icon {
+          display: block;
+          width: 16px;
+          height: 16px;
+
+          path {
+            fill: $darkBlue
+          }
+        }
+      }
+    }
+    &_all {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 0 0 10px 10px;
+      background-color: #F9F9FC;
+      border: none;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: $trs3;
+
+      &:hover {
+        background-color: darken(#F9F9FC, 10%);
+      }
+      &_content {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: $darkBlue;
+        font: 12px/1.33 tb;
+      }
+      &_icon {
+        display: block;
+        width: 11px;
+        height: 6px;
+        margin-left: 15px;
+        transition: $trs3;
+
+        &--rotated {
+          transform: rotate(180deg);
+        }
+        path {
+          fill: transparent;
+          stroke: $darkBlue
+        }
+      }
+    }
+  }
+}

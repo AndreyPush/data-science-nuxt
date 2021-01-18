@@ -1,0 +1,243 @@
+.footer {
+  padding: 50px 0 25px;
+  background-color: $darkBlue;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col {
+    flex: 1 1 315px;
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-of-type(2){
+      align-items: center;
+    }
+    &:last-of-type{
+      align-items: flex-end;
+    }
+  }
+  .head {
+    display: block;
+    color: #ffffff;
+    font: 22px/26px tb;
+    margin-bottom: 30px;
+  }
+  .form {
+    background: #FFFFFF;
+    box-shadow: 0px -10px 42px rgba(255, 53, 49, 0.05), 0px 20px 42px rgba(104, 55, 243, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+
+    .input {
+      flex: 1;
+      background-color: transparent;
+      border: none;
+      height: 100%;
+      padding: 0 20px;
+      color: $darkGray;
+      font: 18px/1.27 tb;
+
+    }
+    .submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 46px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: $trs;
+      border: none;
+      margin-right: 4px;
+      padding: 0;
+      background-color: #CED5E1;
+
+
+      &:hover {
+        background-color: darken(#CED5E1, 10%);
+      }
+      &-icon {
+        display: block;
+        width: 9px;
+        height: 16px;
+
+        path {
+          fill: transparent;
+          stroke: $white;
+          stroke-width: 2px;
+        }
+      }
+    }
+  }
+
+  .share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-lnk {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 28px;
+      border: none;
+      cursor: pointer;
+      flex-shrink: 0;
+      box-shadow: 0px -15px 64px rgba(255, 53, 49, 0.2), 0px 14px 64px rgba(104, 55, 243, 0.5);
+      transition: $trs;
+      margin: 0 20px;
+      padding: 0;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background-color: $darkBlue;
+        transition: $trs;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $white;
+      }
+      &:hover{
+        &::before {
+          width: calc(100% - 4px);
+          height: calc(100% - 4px);
+        }
+        .share-icon {
+          transition: 0.2s linear;
+          filter: drop-shadow(0 0 3px #fff);
+          path {
+            fill: $white
+          }
+        }
+      }
+    }
+    &-icon {
+      display: block;
+      flex-shrink: 0;
+      width: 100%;
+      height: auto;
+      max-width: 25px;
+      max-height: 25px;
+      position: relative;
+      z-index: 3;
+      transition: 0.1s linear;
+
+      path {
+        fill: $darkGray;
+        transition: 0s linear 0.2s;
+      }
+    }
+  }
+  .apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .app {
+      margin: 0 10px;
+      width: 123px;
+      height: 40px;
+    }
+  }
+  .hr {
+    margin: 50px 0 22px 0;
+    border: none;
+    background-color: #312451;
+    height: 1px;
+    width: 100%;
+    display: block;
+  }
+  .logo {
+    display: block;
+    margin-top: 23px;
+    width: 195px;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 39px;
+
+    &-lnk {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 19px;
+      height: 16px;
+
+
+      &:not(:first-of-type) {
+        margin-left: 25px;
+      }
+      &:hover {
+        .social-icon {
+          filter: drop-shadow(0 0 3px #fff);
+          path {
+            fill: #fff
+          }
+        }
+      }
+    }
+    &-icon {
+      flex-shrink: 0;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      flex: 1;
+      transition: $trs;
+
+      path {
+        fill: #8E86A1;
+        transition: $trs;
+      }
+    }
+  }
+  .email {
+    display: block;
+    color: #ffffff;
+    font: 16px/1.56 tr;
+  }
+  .ext-link {
+    display: block;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: $darkGray;
+    font: 16px/1.56 tb;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .copyright {
+    display: block;
+    margin-top: 13px;
+    text-align: center;
+    color: $darkGray;
+    font: 12px/14px tb;
+  }
+}

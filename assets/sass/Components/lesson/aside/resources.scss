@@ -1,0 +1,44 @@
+.asideSources {
+  padding: 0 20px;
+
+  &_list {
+    margin-top: 20px;
+
+  }
+  &_item {
+    display: block;
+
+    &_lnk {
+      display: flex;
+      align-items: center;
+      &:hover {
+        .asideSources_item_title {
+          text-decoration: none;
+        }
+      }
+    }
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+    &_icon {
+      display: block;
+
+      &Block {
+        width: 16px;
+      }
+    }
+    &_title {
+      display: block;
+      margin-left: 8px;
+      color: $darkGray;
+      text-decoration: underline;
+      font: 14px/1.1 tr;
+    }
+    &_points {
+      display: block;
+      margin-left: auto;
+      font: 14px/1.1 tr;
+      color: #1C0E42;
+    }
+  }
+}

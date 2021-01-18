@@ -1,0 +1,179 @@
+.lesson_masterClass {
+  background-color: $white;
+  box-shadow: 0px 6px 20px rgba(140, 147, 162, 0.1);
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+
+  &--opened {
+    transition: 0.4s linear;
+  }
+  &_video {
+    flex: 1 1 50%;
+    max-width: 50%;
+    position: static;
+
+    &--active {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &_data {
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-left: auto;
+    padding: 20px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &--active {
+      flex: 1 1 100%;
+      max-width: 100%;
+      transition: 0.4s linear;
+    }
+  }
+  &_title {
+    display: block;
+    color: $darkBlue;
+    font: 18px/22px tb;
+
+    &:not(:first-of-type) {
+      margin-top: 30px;
+    }
+  }
+  &_content {
+    display: block;
+    margin-top: 12px;
+    color: $darkGray;
+    font: 14px/1.43 tr;
+    margin-bottom: 20px;
+  }
+  &_duration {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+
+    &_icon {
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
+    &_val {
+      display: block;
+      margin-left: 5px;
+      color: $darkGray;
+      font: 14px/1.43 tr;
+    }
+  }
+  &_more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    background-color: $white;
+    border-radius: 10px 0 10px 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: -3px -3px 5px rgba($darkGray, 0.5);
+    display: flex;
+    align-items: center;
+    height: 30px;
+    transition: all $trs;
+    width: 40px;
+    &:hover {
+      background-color: $red;
+      width: 134px;
+      .lesson_masterClass_more {
+        &_icon {
+          path {
+            fill: $white
+          }
+          &Wrapper {
+            background-color: $red;
+          }
+        }
+        &_content {
+          color: $white;
+          &Wrapper {
+            transition: $trs 0.1s;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    &_content {
+      display: block;
+      font: 12px/1 tr;
+      text-transform: uppercase;
+      transition: $trs;
+      color: $red;
+      &Wrapper {
+        display: none;
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        overflow: hidden;
+        transition: $trs;
+
+      }
+    }
+    &_icon {
+      width: 20px;
+      height: 20px;
+      display: block;
+      path {
+        fill: $red;
+        transition: $trs;
+      }
+      &Wrapper {
+        background-color: $white;
+        padding: 0 10px;
+        position: relative;
+        z-index: 2;
+        transition: $trs;
+        margin-left: auto;
+      }
+    }
+  }
+  &_sources {
+
+    &_list {
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+    &_item {
+      border-bottom: 1px solid $darkGray;
+
+      &_lnk {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+      }
+
+      &_icon {
+        display: block;
+        width: 16px;
+        height: 16px;
+        path {
+          stroke: $red
+        }
+      }
+      &_title {
+        display: block;
+        margin-left: 10px;
+        color: $darkGray;
+        font: 14px/17px tr;
+      }
+    }
+  }
+}

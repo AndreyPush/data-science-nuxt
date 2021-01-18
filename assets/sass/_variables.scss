@@ -1,0 +1,27 @@
+/// including variables ///
+
+// colors
+$red: #FC4C4C;
+$pink: #F98274;
+$white: var(--color-white);  //#ffffff;
+$green: #3ACF88;
+$darkBlue: var(--color-darkBlue);  //#1C0E42;
+$darkPurple: var(--color-darkPurple);  //#6837F3;
+$purple: var(--color-purple);  //#B14BC4;
+$darkGray: var(--color-darkGray);  //#8C93A3;
+$semidarkGray: #f5f7f7;
+$gray: #E8EAEE;
+$cream: var(--color-cream);  //#f5f7f7;
+
+
+// media queries
+$d   : 1170px;
+$ta  : 969px;
+$ta2 : 767px;
+$ph  : 479px;
+$ph2 : 320px;
+
+
+// transitions
+$trs  : ease-in-out 0.2s;
+$trs3 : ease-in-out 0.3s;
